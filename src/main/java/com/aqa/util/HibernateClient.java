@@ -29,7 +29,7 @@ public class HibernateClient {
         return sessionFactory;
     }
 
-
+    //SELECT * FROM = findById()
     public static Student findById(int id) {
         try (Session session = getSessionFactory().openSession()) {
             return session.get(Student.class, id);

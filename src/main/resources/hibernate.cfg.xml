@@ -6,15 +6,15 @@
 <hibernate-configuration>
     <session-factory>
         <!-- Database connection settings -->
-        <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
-        <property name="hibernate.connection.url">jdbc:mysql://localhost:3308/teachmeskills</property>
+        <property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/newdb</property>
         <property name="hibernate.connection.username">root</property>
-        <property name="hibernate.connection.password">12345</property>
+        <property name="hibernate.connection.password">mySqlServer23</property>
         <!-- JDBC connection pool (use the built-in) -->
         <property name="hibernate.connection.pool_size">1</property>
         <!-- Echo all executed SQL to stdout -->
         <property name="show_sql">true</property>
-        <!-- SQL dialect -->
+        <!-- SQL dialect / DB type -->
         <property name="dialect">org.hibernate.dialect.MySQLDialect</property>
     </session-factory>
 </hibernate-configuration>
